@@ -8,20 +8,29 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.google.appengine.api.utils.SystemProperty;
-
 @WebServlet(
     name = "HelloAppEngine",
     urlPatterns = {"/hello"}
 )
 public class HelloAppEngine extends HttpServlet {
 
-  @Override
+  private static final long serialVersionUID = 1L;
+
+@Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-	Properties properties = System.getProperties();
+    
+    String obtainParam = "none";
+
+    // when get not retrieves parameters
+    try {
+	obtainParam = request.getParameter("sendNumber");
+    } catch(NullPointerException e) {
+	System.out.print("fail in post");
+    }
+    
     response.setContentType("text/html");
     response.setCharacterEncoding("UTF-8");
-    response.getWriter().append("Hello App Engine!");
+    response.getWriter().append("Hello App Engine!").append(obtainParam);
 
   }
 }

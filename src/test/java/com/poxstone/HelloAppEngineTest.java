@@ -9,11 +9,12 @@ public class HelloAppEngineTest {
 
   @Test
   public void test() throws IOException {
+      
     MockHttpServletResponse response = new MockHttpServletResponse();
     new HelloAppEngine().doGet(null, response);
-    //ssert.assertEquals("text/html", response.getContentType());
-    //Assert.assertEquals("UTF-8", response.getCharacterEncoding());
-    //Assert.assertEquals("Hello App Engine!", response.getWriterContent().toString());
-    Assert.assertEquals("","");
+    Assert.assertEquals("text/html", response.getContentType());
+    Assert.assertEquals("UTF-8", response.getCharacterEncoding());
+    Assert.assertEquals("Hello App Engine!none", response.getWriterContent().toString());
+    //Assert.assertEquals("","");
   }
 }
