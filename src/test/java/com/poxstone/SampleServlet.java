@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HelloAppEngineTest {
+public class SampleServlet {
 
   @Test
   public void test() throws IOException {
