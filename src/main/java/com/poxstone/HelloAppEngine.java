@@ -23,7 +23,7 @@ public class HelloAppEngine extends HttpServlet {
 
     // when get not retrieves parameters
     try {
-	obtainParam = request.getParameter("sendNumber");
+	obtainParam = request.getParameter("sendString");
     } catch(NullPointerException e) {
 	System.out.print("fail in post");
     }
