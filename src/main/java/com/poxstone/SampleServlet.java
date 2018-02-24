@@ -1,8 +1,6 @@
 package com.poxstone;
 
 import java.io.IOException;
-import java.util.Properties;
-
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 public class SampleServlet extends HttpServlet {
 
   private static final long serialVersionUID = 1L;
+  public static final String URL = "helloServlet";
+  public static final String PARAM = "sendString";
 
 @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -23,7 +23,7 @@ public class SampleServlet extends HttpServlet {
 
     // On Test launch not pass through here
     try {
-	obtainParam = request.getParameter("sendString");
+	obtainParam = request.getParameter(this.PARAM);
 	obtainParam = obtainParam  == null ? obtainParam : "none"; 
     } catch(NullPointerException e) {
 	System.out.print("fail in post");
