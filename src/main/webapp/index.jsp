@@ -9,7 +9,7 @@
     <h1>Hello App Engine!</h1>
     <p>
 	    <b>Available Servlets:</b>
-	    <a href='/hello?sendString=Hola'>send Hola</a>
+	    <a href='/helloServlet?sendString=Hola'>send Hola</a>
     </p>
     <div>System date: <%= new java.util.Date() %></div>
   </body>
