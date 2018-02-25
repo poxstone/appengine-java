@@ -23,8 +23,8 @@ public class SampleServlet extends HttpServlet {
 
     // On Test launch not pass through here
     try {
-	obtainParam = request.getParameter(this.PARAM);
-	obtainParam = obtainParam  == null ? obtainParam : "none"; 
+	obtainParam = request.getParameter(SampleServlet.PARAM);
+	obtainParam = obtainParam  != null ? obtainParam : "none"; 
     } catch(NullPointerException e) {
 	System.out.print("fail in post");
     }
