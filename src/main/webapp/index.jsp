@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css"  />
     <title>Hello App Engine</title>
   </head>
 
