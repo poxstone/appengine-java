@@ -3,7 +3,7 @@
 
   <threadsafe>true</threadsafe>
   <sessions-enabled>false</sessions-enabled>
-  <service>testservice</service>
+  <service>default</service>
   <runtime>java8</runtime>
 
 </appengine-web-app>
