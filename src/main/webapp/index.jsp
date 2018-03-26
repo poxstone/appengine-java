@@ -5,10 +5,13 @@
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
     <link href="/static/css/style.css" rel="stylesheet" type="text/css"  />
     <title>Hello App Engine</title>
+    <script src="/static/js/main.js"></script>
   </head>
 
   <body>
+    <img src="/static/img/logo-google-cloud-2x.png">
     <h1>Hello App Engine!</h1>
+    <a href="/form.jsp">form</a>
     <p>
 	    <b>Available Servlets: (<%= request.getHeader("User-Agent") %>)</b>
 	    <br>
@@ -27,7 +30,7 @@
 	        <ul>
 		    	<% 
 	    	    for (int i=0;i<5;i++) {
-	    	    	out.println("<li> linea = " + i + "</i>");
+	    	    	out.println("<li> linea = " + i + "</li>");
 	    	    }
 		    	 %>
 	    	</ul>

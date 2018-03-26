@@ -1,5 +1,5 @@
 
-# Appengine java sample
+# Appengine java 8 sample
 
 See more in:
 

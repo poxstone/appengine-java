@@ -2,3 +2,7 @@ html,body{
 	background: white;
 	color: #666;
 }
+img {
+	width: 100%;
+	max-width: 320px;
+}

@@ -7,12 +7,12 @@
   <runtime>java8</runtime>
  
   <static-files>
-    <include path="/**.html" ></include>
-    <include path="/**.css" ></include>
-    <include path="/**.js" ></include>
-    <include path="/**.jpg" ></include>
-    <include path="/**.png" ></include>
-    <include path="/**.svg" ></include>
+    <include path="/**.html" />
+    <include path="/**.css" />
+    <include path="/**.js" />
+    <include path="/**.jpg" />
+    <include path="/**.png" />
+    <include path="/**.svg" />
   </static-files>
   
 </appengine-web-app>

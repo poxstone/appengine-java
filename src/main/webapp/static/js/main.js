@@ -1,0 +1,1 @@
+console.info("my navigator is: ", navigator.userAgent);
